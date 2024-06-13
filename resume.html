@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Resume | Caleb Ouedraogo | Tech Specialist </title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+  </head>
+  <body class="resume">
+    <!-- //  INTRO  // -->
+    <a class="btn download-link" href="caleb-r.pdf">Download PDF</a>
+    <header>
+      <div class="content-wrapper">
+        <h1>Caleb Ouedraogo</h1>
+        <h2>Tech Specialist</h2>
+    </div>
+    </header>
+    
+    <main class="content-wrapper">
+      <!-- //  PROFILE  // -->
+      <section class="resume-section">
+        <h2>Profile</h2>
+        <p>I am a proactive tech professional, excelling as a security analyst and penetration tester. As a visionary leader, I bring strong problem-solving skills and adaptability to fast-paced environments. I hold a Master of Science in Information Technology Management, complemented by an undergraduate background in Transportation and Logistics. Driven by a passion for technology, I transitioned to IT, gaining a solid understanding of Information Technology management. My experience includes network engineering, cybersecurity analysis, and penetration testing. Currently, I am expanding my skills in full-stack software development to create innovative and efficient solutions.</p>
+        <a href="index.html">Back to homepage</a>
+      </section>
+
+      <!-- //  PROJECTS  // -->
+      <section class="resume-section">
+        <h2>Projects</h2>
+        <p>The section provides a summary of several lab projects I have undertaken, detailling the methodologies and procedures employed in their execution.</p>
+        <div class="project-wrapper">
+        <section class="project-item" >
+          <img src="images/sentnl.png" alt="description of image">
+          <h3>Honeypot Project: Azure Sentinel Map with Live Cyber Attacks</h3>
+          <p>The project demonstrated the global scale and distribution of cyber-attacks using Azure Sentinel and a purposely vulnerable VM, emphasizing the critical importance of network security and system hardening when deploying systems on the internet.</p>
+          <p><ol>
+            <li>Created an Azure account with an active subscription for the project.</li>
+            <li>Deployed a Windows 10 Pro Virtual Machine (VM) and configured it to be highly visible on the internet, allowing all incoming traffic to ensure it is easily discoverable by potential attackers.</li>
+            <li>Established a Log Analytics Workspace and configured Data Collection Rules to gather and monitor logs from the VM, successfully connecting the VM to the Log Analytics Workspace.</li>
+            <li>Set up Azure Sentinel to visualize the collected data, configuring a Sentinel map with longitude and latitude data to display the geographic locations of cyber events.</li>
+            <li>Accessed the VM via Remote Desktop and executed a custom PowerShell script to collect IP addresses from failed login attempts recorded in the VM's event viewer. These IP addresses were forwarded to a third-party API to determine their geolocation, and the resulting data was stored in a file on the VM. This log file was subsequently collected and ingested into the Log Analytics Workspace for visualization in Azure Sentinel.</li>
+            <li>Within 30 minutes of the VM's creation, over 1,000 failed login attempts were recorded from around the globe, with attack origins including the United States, Russia, South Korea, Netherlands, Morocco, Brazil, and Turkey.</li>
+            <p>This underscored the global reach and rapid onset of cyber-attacks, illustrating the necessity of robust network security measures and proactive monitoring using SIEM tools like Azure Sentinel or Splunk.</p>
+            </ol>
+          </p>
+          <!-- links to project -->
+          <a class="btn" href="https://github.com/calebouedraogo/honeypot-project/blob/main/custom-script.ps1" target="_blank">PowerShell Script</a>
+          <a class="btn" href="https://github.com/calebouedraogo/honeypot-project/blob/main/README.md" target="_blank">Script Description</a>
+        </section>
+        <section class="project-item" >
+          <img src="images/active-directory-project.png" srcset="" alt="description of image" width="" height="">
+          <h3>Active Directory Environment Project using VirtualBox</h3>
+          <p><ol>
+            <p>This project demonstrated the setup and management of an Active Directory environment in a virtualized setting, highlighting essential network engineering skills.</p>
+            <li>Installed VirtualBox on a Mac machine for the project.</li>
+            <li>Deployed and configured a Windows Server 2019 on VirtualBox to serve as a Domain Controller. The server was set up with two Network Interface Cards (NICs) - one for the internal network and another for internet access.</li>
+            <li>Implemented Active Directory Domain Services (AD DS) on the server, creating a domain to establish a structured and secure network environment.</li>
+            <li>Configured Remote Access Service (RAS) and Network Address Translation (NAT) on the server to enable client internet access through the server.</li>
+            <li>Set up Dynamic Host Configuration Protocol (DHCP) on the server to automate IP address assignment for clients on the network.</li>
+            <li>Executed a custom PowerShell script to create 1000 user accounts on the server. Each account was assigned a username using the first letter of its user’s first name followed by its last name, and a password.</li>
+            <li>Installed and configured a Windows 10 Pro client on VirtualBox, joined to the domain, allowing all 1000 users to access the client using their credentials.</li>
+            <p>This explained the practical application of network engineering principles in setting up and managing a comprehensive Active Directory environment within a virtualized infrastructure.</p>
+              </ol>
+          </p>
+          <!-- link to project -->
+          <a class="btn" href="https://github.com/calebouedraogo/active-directory_project/blob/main/1_CREATE_USERS.ps1" target="_blank">PowerShell Script</a>
+          <a class="btn" href="https://github.com/calebouedraogo/active-directory_project/blob/main/README.md" target="_blank">Script Description</a>
+        </section>
+        </div>
+      </section>
+
+      <!-- //  WORK EXPERIENCE  // -->
+      <section class="resume-section">
+        <h2>Work Experience</h2>
+        <p>View my most recent work history below. More information can be viewed on <a href="https://www.linkedin.com/in/caleb-ouedraogo/" target="_blank"> LinkedIn</a>.</p>
+        <section class="work-item">
+          <div class="work-details">
+              <h3>Part-Time Web Development</h3>
+              <p>LaunchCode, remote (USA)</p>
+              <p>June 2024 - February 2025</p>
+          </div>
+          <div class="work-summary">
+          <p><ul>
+                <li>I have been accepted into LaunchCode Part-Time Web Dev All Hubs (June 2024) program.</li>
+                <li>I will be updating this section as I go through the program.</li>
+             </ul>
+            </p>
+          </div>
+        </section>
+        <section class="work-item">
+          <div class="work-details">
+            <h3>Cyber Security Analyst Trainee</h3>
+            <p>Per Scholas, Philadelphia, PA (USA)</p>
+            <p>November 2023 - March 2024</p>
+          </div>
+          <div class="work-summary">
+            <p>
+              <ul>
+                  <li>Invested over 525 hours in this Cybersecurity Training, showcasing a strong commitment to skill mastery.</li>
+                  <li>Conducted vulnerability assessments using tools like Nessus, OpenVAS, and Qualys to identify potential security risks in systems, networks, and applications.</li>
+                  <li>Monitored security alerts with SIEM tools like Splunk, analyzing logs and network traffic for signs of malicious activity and promptly escalating incidents.</li>
+                  <li>Supported compliance evaluations and audits.</li>
+                  <li>Developed training materials to enhance cybersecurity awareness among employees. View an example of phishing poster <a href="images/phishing-poster.png" target="_blank">here</a>.</li>
+                  <li>Prepared concise reports and presentations to communicate cybersecurity risks and recommendations to stakeholders and management.</li>
+                  <li>Configured routers and switches to optimize network performance, ensuring efficient data flow and robust connectivity across the network.</li>
+                  <li>Designed and implemented network solutions, including LAN, WAN, and wireless configurations, to meet organizational needs.</li>
+              </ul>
+            </p>
+            <p>Certifications obtained during the training:</p>
+            <ul>
+                <li><a href="https://www.credly.com/badges/aac684ac-5ce9-4d13-955b-28826a737e81/linked_in_profile">CompTIA Cyber Security Analyst (CySA+) Certification</a></li>
+                <li><a href="https://www.credly.com/badges/f8b3e289-9ffb-4b2b-ad5e-b998ebe6354f/linked_in_profile">Cisco Cyber Security Essentials Certificate</a></li>
+                <li><a href="https://www.credly.com/badges/f8b3e289-9ffb-4b2b-ad5e-b998ebe6354f/linked_in_profile">Cisco Network Essentials Certificate</a></li>
+                <li>NDG Linux Essentials Certificate</li>
+            </ul>
+          </div>
+        </section>
+        <section class="work-item">
+          <div class="work-details">
+              <h3>SAS Visual Analytics Trainee</h3>
+              <p>SAS Institute, remote (USA)</p>
+              <p>September 2023 - November 2023</p>
+          </div>
+          <div class="work-summary">
+          <p><ul>
+                <li>Completed extensive training in SAS software, focusing on data management, analytics, and business intelligence.</li>
+                <li>Conducted comprehensive data analysis to identify trends, patterns, and insights using SAS Viya software.</li>
+                <li>Integrated data from various sources into SAS Viya, ensuring seamless data flow and comprehensive analytics.</li>
+                <li>Optimized data processing and analytics workflows in SAS Viya to improve efficiency and reduce computation time.</li>
+                <li>Created reports that can be used for strategic decision-making.</li>
+              </ul>
+            </p>
+          </div>
+        </section>
+        <section class="work-item">
+          <div class="work-details">
+              <h3>FC Associate</h3>
+              <p>Amazon, West Deptford, NJ (USA)</p>
+              <p>August 2022 - Current</p>
+          </div>
+          <div class="work-summary">
+          <p><ul>
+                <li>Assisted in the training of new hires.</li>
+                <li>Collaborated with team members to meet daily production goals.</li>
+                <li>Demonstrated a commitment to maintaining a safe working environment, participating in safety initiatives and protocols.</li>
+                <li>Identified and corrected safety hazards, contributing to a decrease in workplace incidents.</li>
+                <li>Operated forklifts and other equipment to move and organize goods within the warehouse, showcasing adaptability and quick learning.</li>
+                <li>Strong attention to detail in warehouse operations, emphasizing task accuracy and precision.</li>
+              </ul>
+            </p>
+          </div>
+        </section>
+      </section>
+
+      <!-- //  EDUCATION & CERTIFICATIONS  // -->
+      <section class="resume-section">
+        <h2>Education</h2>
+        <section class="education-item">
+          <h3>Western Governors University - Salt Lake, UT (USA)</h3>
+          <p>Master of Science in Information Technology Management: Graduated in June 2023</a></p>
+          <p>
+            <ul>
+              <li>Studies focused on IT Foundations, Network Infrastructure, Design, and Security.</li>
+              <li>Courses included Project Management, Current and Emerging Technologies, IT sourcing, Managing Technology Operations and Innovation, Technical Communication, Financial Management, Power, Influence, and Leadership.</li>
+            </ul>
+          </p>
+        </section>
+        <section class="education-item">
+          <h3>Université Aube Nouvelle  - Ouagadougou, BF-KAD (Burkina Faso)</h3>
+          <p>Bachelor's degree in Transportation and Logistics: Graduated in December 2017
+          <p>
+            <ul>
+              <li>Studies focused on Supply Chain Management, Distribution, Inventory Control, Logistics Technology, and Operations.</li>
+              <li>Courses included Logistics Process Management, Warehouse Management, Inventory Management,Production Management, Contract Management, and Transportation (Land, Rail, Maritime, and Air).</li>
+            </ul>
+          </p>
+        </section>
+        <section class="education-item">
+          <h3>My Library</h3>
+          <a class="btn" href="library.html">Click here</a>
+        </section>
+      </section>
+    </main>
+
+    <!-- //  FOOTER INFO, SOCIAL MEDIA  // -->
+    <footer>
+      <p>© 2024 by Caleb Ouedraogo | <a href="mailto:email@example.com">ouedraogocaleb2@gmail.com</a></p>
+      <ul class="socials">
+        <li>
+          <a href="https://x.com/TechInsighs24" target="_blank"><img src="images/icon-logo-twitter.png" alt="My Twitter Profile"></a>
+        </li>
+        <li>
+          <a href="https://www.linkedin.com/in/caleb-ouedraogo/" target="_blank"><img src="images/icon-logo-linkedin.png" alt="My LinkedIn Profile"></a>
+        </li>
+        <li>
+          <a href="https://www.facebook.com/profile.php?id=61560236799271" target="_blank"><img src="images/icon-logo-facebook.png" alt="My Facebook Profile"></a>
+        </li>
+        <li>
+          <a href="https://www.youtube.com/@TechSphere-hd4tz" target="_blank"><img src="images/icon-logo-youtube.png" alt="My YouTube Channel"></a>
+        </li>
+        <li>
+          <a href="https://www.instagram.com/caleb_innovations/" target="_blank"><img src="images/icon-logo-instagram.png" alt="My Instagram Profile"></a>
+        </li>
+      </ul>
+    </footer>
+  </body>
+</html>
